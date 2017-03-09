@@ -11,7 +11,8 @@ text-shadow: 0px 0px 8px #C0C0C0;
 font-size: 60px;
 font-family: 'Orbitron', serif;
 text-align: center;
-background-color: ;   
+background-color:
+    
 }
 
 
@@ -55,3 +56,33 @@ div > em{
     font-size: 33px;
     font-family: 'Orbitron', serif;
    
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #49274A;
+    position: fixed;
+    bottom: 0;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 10px;
+}
+
+li a:hover:not(.active){
+    background-color: #F4DECB;
+}
