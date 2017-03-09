@@ -1,9 +1,18 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    
+    
+}
 body {
+ 
     background-color: #F8EEE7;
 }
 
 .head{
-    background-color:;
+    
 }
 .sombra1 {
 color: #94618E ;   
@@ -46,7 +55,8 @@ li a:hover {
   text-align: center;
 }
 div > p {
-    position:relative; left: 22%;
+    position:absolute; 
+    left: 22%;
     font-size: 43px;
     font-family: 'Orbitron', serif;
 }
@@ -57,23 +67,26 @@ div > em{
     font-family: 'Orbitron', serif;
    
 
-
-ul {
+footer {
+        position: fixed;
+        z-index: 50;
+    }
+footer > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #49274A;
-    position: fixed;
+    
     bottom: 0;
    
 }
-
-li {
+footer> li {
+    
     float: left;
-}
+    }
 
-li a {
+ a {
     display: block;
     color: white;
     text-align: left;
@@ -83,6 +96,7 @@ li a {
     font-size: 10px;
 }
 
-li a:hover:not(.active){
+ a:hover:not(.active){
     background-color: #F4DECB;
-}
+
+    }
