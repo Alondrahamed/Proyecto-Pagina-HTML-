@@ -49,5 +49,19 @@ li a:hover {
     background-color: #F4DECB;
 }
 
+.margen{
+  margin-top:auto;
+  margin-right: 150px;
+  margin-bottom: auto;
+  margin-left: 150px;
+}
 
+
+
+.grow:hover
+{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
     
