@@ -84,35 +84,4 @@ font-family: "Arial";
 text-align: justify;
 }
 
-footer {
-        position: fixed;
-        z-index: 50;
-    }
-footer > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #49274A;
-    
-    bottom: 0;
-   
-}
-footer> li {
-    
-    float: left;
-    }
 
- a {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 13px 15px;
-    text-decoration: none;
-    font-family: "Arial";
-    font-size: 10px;
-}
-
- a:hover:not(.active){
-    background-color: #F4DECB;
-}
