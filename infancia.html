@@ -1,35 +1,51 @@
-<html>  
-  <head> 
+<html lang="en">  
+  <head>  
+   <meta charset="UTF-8"> 
    <title>  infancia </title>
     <link rel="stylesheet" type="text/css" href="./infancia.css">
- </head> 
+    <link rel="stylesheet" type="text/css" href="./fonts.css"> 
    
-     <body> 
-         
+      
+      
+    <script language='javascript' type='text/javascript'>
+     var arriba;
+      function subir() {
+        if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+         window.scrollBy(0, -15);
+         arriba = setTimeout('subir()', 10);
+     }
+       else clearTimeout(arriba);
+   }
+      
+</script>
+   </head>
+  
+<body> 
+  
  <nav>   
      <ul> 
-        <li>     <a href="./pagina.html"> Inicio     </a> </li>
-        <li>     <a href="./familia.html">     Familia        </a> </li>
-        <li>     <a href="./adolescencia.html"> Adolescencia </a> </li>
-        <li>     <a href="./estudios.html">   Estudios       </a> </li>
-        <li>     <a href="./amigos.html">    Amigos      </a> </li>
+        <li>     <a href="./pagina.html">        Inicio            </a> </li>
+        <li>     <a href="./familia.html">       Familia           </a> </li>
+        <li>     <a href="./adolescencia.html">  Adolescencia      </a> </li>
+        <li>     <a href="./estudios.html">      Estudios          </a> </li>
+        <li>     <a href="./amigos.html">        Amigos            </a> </li>
         <li>     <a href="./experiencias.html">  Mis Experiencias  </a> </li>
-        <li>     <a href="./metas.html">     Metas           </a> </li>
-        <li>     <a href="./gustos.html">    Mis gustos            </a> </li>
-         <li>     <a href="./informacion.html"> Informacion Personal       </a> </li> 
+        <li>     <a href="./metas.html">         Metas             </a> </li>
+        <li>     <a href="./gustos.html">        Mis gustos        </a> </li>
+        <li>     <a href="./informacion.html">  Informacion Personal</a> </li> 
        </ul> 
 </nav> 
         
-         
+       
        <head>
 
-       <header class="head"> 
+       <header class="head">  
            <p class="sombra1"> <a href="./pagina.html">  Infancia </a> </p> 
            </header>  
                   
        </head> 
          
-
+   
      <p align="justify"> &#84;odo comenz&#243; el d&#237;a &#49;&#54; de junio de &#49;&#57;&#57;&#52;&#44; ese d&#237;a nac&#237; yo &#65;londra aproximadamente en la noche  no recuerdo bien la hora exactamente&#46;</p> 
   
     <br> <p align="justify">  &#77;is padres &#82;osaura &#72;amed y &#67;esar &#79;rdu&#241;o&#44; como se dar&#225;n cuenta tengo los mismos apellidos de mi mama  &#72;amed &#83;oto&#44; cuando yo nac&#237; mis padres decidieron separarse por tal motivo no estoy registrado con sus apellido&#44; mi mama siempre trabajo para mantener la familia mientras mi abuela nos cuidaba de bebes a mis hermanos y a mi&#46; </p> 
@@ -109,6 +125,8 @@
     <br> 
     <br> 
     
+    
+    
          <footer style="position:fixed;bottom:0;width:100%">
      <ul> 
           
@@ -118,8 +136,13 @@
         <li>     <a         href="https://www.google.com.mx/maps/place/San+Nicol%C3%A1s+de+Los+Garza+2163,+Villas+Monterrey,+81270+Los+Mochis,+Sin./@25.7713518,-109.0089075,17z/data=!3m1!4b1!4m5!3m4!1s0x86ba258dcd4e2c95:0x76d24b2518aa9b73!8m2!3d25.771347!4d-109.0067188" target="_blank">  
         <img src="./img/iconos/ubiacion.png">  </a> </li> 
         <li>     <a href="./pagina.html"> <img src="./img/iconos/regreso.png"align="left"> </a>  </li>
-        
+        <li>  <a href='#' onclick='subir();return false' title='Ir Arriba'><img src="./img/iconos/flecha-ampliar.png"></a></li> 
+         
+         
 </ul> 
+             
+             
+   
      </footer>
   
   
