@@ -1,16 +1,52 @@
-<html>  
+<html lang="es">  
   <head> 
    <title>  Alondra'Hamed </title>
+   <meta charset="UTF-8">
+   <meta name="viewport"  content="width=device-width,user-scalable=no, initial-scale=1,maximun-scale=1, minimun-scale=1"> 
    <link href="./img/Ah.png" rel="shortcut icon" type="image/x-icon" />
-      <link rel="stylesheet" type="text/css" href="./paginaprincipal.css">
- </head> 
+   <link rel="stylesheet" type="text/css" href="./paginaprincipal.css">
+      
+      
+      <script>
+//creo array de imágenes
+array_imagen = new Array(4)
+array_imagen[0] = new Image(500,41)
+array_imagen[0].src = "./img/principal/alondra.jpg"
+array_imagen[1] = new Image(120,41)
+array_imagen[1].src = "./img/principal/alondra12.jpg"
+array_imagen[2] = new Image(120,41)
+array_imagen[2].src = "./img/principal/alondra1.jpg"
+array_imagen[3] = new Image(120,41)
+array_imagen[3].src = "./img/principal/alondra123.jpg"
+       
+array_url = new Array(4)
+array_url[0] = "alondra.jpg"
+array_url[1] = "alondra12.jpg"
+array_url[2] = "alondra1.jpg"
+array_url[3] = "alondra123.jpg"
+//variable para llevar la cuenta de la imagen siguiente
+contador = 0
 
- <body> 
+//función para rotar el banner
+function alternar_banner(){
+    window.document["banner"].src = array_imagen[contador].src
+    window.document.links[0].href = array_url[contador]
+    contador ++
+    contador = contador % array_imagen.length
+    setTimeout("alternar_banner()",1000)
+} </script>
+</head>  
+
+ <body onload="alternar_banner()">
+
+
    <header class="head"> 
+        
       <p class="sombra1">Hamed Soto Alondra Esmeralda</p> 
- </header>
+ </header> 
      
- <nav>   
+
+ <nav class="menu">   
      <ul>  
          
         <li>     <a href="./infancia.html"> Mi Infancia     </a> </li>
@@ -25,14 +61,13 @@
        </ul> 
 </nav> 
      
-<div style="img ">
-    <img src="./img/principal/alondra12.jpg" style="float:left;"/>  
-     </div> 
+
+ <div class=borderidge>
+  <a href="#"><img src="#" name="banner"  width=450 height=400 border=10px></a>  
+   <div id="caja"><h1> 
      
-     <div class=borderidge>
-   <div id="caja"><h1>    
     <br> Bienvenidos a mi pagina personal  <br> </h1>
-      
+     
      <p> Soy Estudiante del Instituto tecnol&#243;gico de los Mochis&#44; en la carrera de Ing&#46; Inform&#225;tica, 
        tengo 22 a&#241;os mi nombre es Alondra Esmeralda Hamed Soto&#44; soy una persona a la que le gusta mucho ser 
        buena con la gente y respetuoso&#44; tener muchos amigos&#46; Siempre he pensado que la familia es lo m&#225;s 
@@ -43,6 +78,11 @@
     </div> 
 </div>
      
+   
+     
+     <br>
+     <br>
+     <br>
 <footer style="position:fixed;bottom:0;width:100%">
      <ul> 
           
