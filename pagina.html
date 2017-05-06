@@ -2,51 +2,18 @@
   <head> 
    <title>  Alondra'Hamed </title>
    <meta charset="UTF-8">
-   <meta name="viewport"  content="width=device-width,user-scalable=no, initial-scale=1,maximun-scale=1, minimun-scale=1"> 
+   <meta name="viewport"  content="width=device-width,user-scalable=no, initial-scale=1.0,maximun-scale=1.0, minimun-scale=1.0"> 
    <link href="./img/Ah.png" rel="shortcut icon" type="image/x-icon" />
    <link rel="stylesheet" type="text/css" href="./paginaprincipal.css">
       
       
-      <script>
-//creo array de imágenes
-array_imagen = new Array(4)
-array_imagen[0] = new Image(500,41)
-array_imagen[0].src = "./img/principal/alondra.jpg"
-array_imagen[1] = new Image(120,41)
-array_imagen[1].src = "./img/principal/alondra12.jpg"
-array_imagen[2] = new Image(120,41)
-array_imagen[2].src = "./img/principal/alondra1.jpg"
-array_imagen[3] = new Image(120,41)
-array_imagen[3].src = "./img/principal/alondra123.jpg"
-       
-array_url = new Array(4)
-array_url[0] = "alondra.jpg"
-array_url[1] = "alondra12.jpg"
-array_url[2] = "alondra1.jpg"
-array_url[3] = "alondra123.jpg"
-//variable para llevar la cuenta de la imagen siguiente
-contador = 0
 
-//función para rotar el banner
-function alternar_banner(){
-    window.document["banner"].src = array_imagen[contador].src
-    window.document.links[0].href = array_url[contador]
-    contador ++
-    contador = contador % array_imagen.length
-    setTimeout("alternar_banner()",1000)
-} </script>
 </head>  
 
  <body onload="alternar_banner()">
-
-
-   <header class="head"> 
-        
-      <p class="sombra1">Hamed Soto Alondra Esmeralda</p> 
- </header> 
+  
      
-
- <nav class="menu">   
+      <nav class="menu">   
      <ul>  
          
         <li>     <a href="./infancia.html"> Mi Infancia     </a> </li>
@@ -61,40 +28,48 @@ function alternar_banner(){
        </ul> 
 </nav> 
      
-
- <div class=borderidge>
-  <a href="#"><img src="#" name="banner"  width=450 height=400 border=10px></a>  
+    <br>
+    <br>
+     <br>
+    <br>
+     <br>
+    <br>
+     <br>
+    <br>
+   <header class="head"> 
+     <p class="sombra1">Hamed Soto Alondra Esmeralda</p> 
+  </header> 
+     <br>
+  <div class=borderidge>
    <div id="caja"><h1> 
      
-    <br> Bienvenidos a mi pagina personal  <br> </h1>
-     
-     <p> Soy Estudiante del Instituto tecnol&#243;gico de los Mochis&#44; en la carrera de Ing&#46; Inform&#225;tica, 
+     <br> Bienvenidos a mi pagina personal  <br> </h1>
+     <p><h3>  Soy Estudiante del Instituto tecnol&#243;gico de los Mochis&#44; en la carrera de Ing&#46; Inform&#225;tica, 
        tengo 22 a&#241;os mi nombre es Alondra Esmeralda Hamed Soto&#44; soy una persona a la que le gusta mucho ser 
        buena con la gente y respetuoso&#44; tener muchos amigos&#46; Siempre he pensado que la familia es lo m&#225;s 
        importante que podemos tener y a quienes debemos de ayudar y apoyar en todo momento que se necesite&#46;  
        Me gusta trabajar&#44; hacer deportes&#44;  y estar siempre atenta ante todo y me gusta ir aprendiendo cosas nuevas a 
-       lo largo de mi vida&#46; </p>
-     
+       lo largo de mi vida&#46;</h3> </p>
+    
     </div> 
-</div>
-     
+
+    
    
-     
      <br>
      <br>
      <br>
-<footer style="position:fixed;bottom:0;width:100%">
-     <ul> 
+      <footer style="position:fixed;bottom:0;width:100%">
+       <ul> 
           
         <li>     <a href="https://www.facebook.com/AlondraHamed" target="_blank">  <img src="./img/iconos/facebook.png">   </a> </li>
         <li>     <a href="https://www.instagram.com/alondra_hamed/" target="_blank" >  <img src="./img/iconos/instagram.png">   </a> </li>
         <li>     <a href="https://twitter.com/esmeHamed" target="_blank" >  <img src="./img/iconos/twitter.png">   </a> </li>
         <li>     <a         href="https://www.google.com.mx/maps/place/San+Nicol%C3%A1s+de+Los+Garza+2163,+Villas+Monterrey,+81270+Los+Mochis,+Sin./@25.7713518,-109.0089075,17z/data=!3m1!4b1!4m5!3m4!1s0x86ba258dcd4e2c95:0x76d24b2518aa9b73!8m2!3d25.771347!4d-109.0067188" target="_blank">  
         <img src="./img/iconos/ubiacion.png">  </a> </li> 
-        
-</ul> 
+       </ul> 
      </footer>
-  
+     
+     
   </body> 
 </html> 
 
