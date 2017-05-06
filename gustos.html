@@ -2,6 +2,17 @@
   <head> 
    <title>  Gustos </title>
       <link rel="stylesheet" type="text/css" href="./gustos.css">
+      <script language='javascript' type='text/javascript'>
+     var arriba;
+      function subir() {
+        if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+         window.scrollBy(0, -15);
+         arriba = setTimeout('subir()', 10);
+     }
+       else clearTimeout(arriba);
+   }
+      
+</script>
   </head> 
     
     
@@ -101,8 +112,28 @@
 ver pel&#237;culas&#44; entre mil cosas m&#225;;s&#46; </p>   
    
     
+   <br>
+   <br> 
+
+         <footer style="position:fixed;bottom:0;width:100%">
+     <ul> 
+          
+        <li>     <a href="https://www.facebook.com/AlondraHamed" target="_blank">  <img src="./img/iconos/facebook.png">   </a> </li>
+        <li>     <a href="https://www.instagram.com/alondra_hamed/" target="_blank" >  <img src="./img/iconos/instagram.png">   </a> </li>
+        <li>     <a href="https://twitter.com/esmeHamed" target="_blank" >  <img src="./img/iconos/twitter.png">   </a> </li>
+        <li>     <a         href="https://www.google.com.mx/maps/place/San+Nicol%C3%A1s+de+Los+Garza+2163,+Villas+Monterrey,+81270+Los+Mochis,+Sin./@25.7713518,-109.0089075,17z/data=!3m1!4b1!4m5!3m4!1s0x86ba258dcd4e2c95:0x76d24b2518aa9b73!8m2!3d25.771347!4d-109.0067188" target="_blank">  
+        <img src="./img/iconos/ubiacion.png">  </a> </li> 
+        <li>     <a href="./pagina.html"> <img src="./img/iconos/regreso.png"align="left"> </a>  </li>
+        <li>  <a href='#' onclick='subir();return false' title='Ir Arriba'><img src="./img/iconos/flecha-ampliar.png"></a></li> 
+         
+         
+</ul> 
+             
+             
    
+     </footer>
 
  
  </body>
 </html>
+
