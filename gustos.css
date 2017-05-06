@@ -85,3 +85,15 @@ font-family: serif;
 font-family: "Arial";
 text-align: justify;
 }
+
+.subir {
+	display:inline-block;
+	padding:10px;
+	background:#49274A;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:60px;
+	right:20px; 
+}
