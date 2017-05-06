@@ -14,6 +14,43 @@
        else clearTimeout(arriba);
    }
       
+        
+        
+        
+    //creo array de imágenes
+array_imagen = new Array(4)
+array_imagen[0] = new Image(500,41)
+array_imagen[0].src = "./img/amigos/amigos1.jpg"
+array_imagen[1] = new Image(120,41)
+array_imagen[1].src = "./img/amigos/OswaldoyGaby.jpg"
+array_imagen[2] = new Image(120,41)
+array_imagen[2].src = "./img/amigos/JoseyDina.jpg"
+array_imagen[3] = new Image(120,41)
+array_imagen[3].src = "./img/amigos/ExposicionEsc.jpg"
+       
+
+//creo el array de URLs
+array_url = new Array(4)
+array_url[0] = "amigos1.jpg"
+array_url[1] = "OswaldoyGaby.jpg"
+array_url[2] = "JoseyDina.jpg"
+array_url[3] = "ExposicionEsc.jpg"
+//variable para llevar la cuenta de la imagen siguiente
+contador = 0
+
+//función para rotar el banner
+function alternar_banner(){
+    window.document["banner"].src = array_imagen[contador].src
+    window.document.links[0].href = array_url[contador]
+    contador ++
+    contador = contador % array_imagen.length
+    setTimeout("alternar_banner()",1000)
+} 
+    
+        
+        
+        
+        
 </script>
   </head> 
     
@@ -33,7 +70,7 @@
 </nav>  
     
     
-  <body> 
+  <body onload="alternar_banner()"> 
        <head> 
           
        <header class="head"> 
@@ -51,10 +88,12 @@
 <br>
 <br>
 <br>
-      <div align=center class=" border margen; grow"> 
+      <div align=center class=" border margen;"> 
                 <p class="texto margen"> 
-                  <em>Apoyando la carrera de Ing. Inform&#225;tica&#46;  </em>
-                  <center>  <img src="./img/amigos/amigos1.jpg"> </center>
+                  <em>Diferentes momentos con mis compa&#241;eros de escuela   </em>
+                  
+               <center>  <a href="#"><img src="#" name="banner"  width=500 height=300 border=0px></a>  </center>
+ 
                 </p>
             </div> 
 <br>
@@ -149,10 +188,7 @@
         <li>  <a href='#' onclick='subir();return false' title='Ir Arriba'><img src="./img/iconos/flecha-ampliar.png"></a></li> 
          
          
-</ul> 
-             
-             
-   
+</ul>
      </footer>
 
   </body> 
