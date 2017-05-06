@@ -2,7 +2,18 @@
   <head> 
    <title> Informacion </title>
    <link href="./img/Ah.png" rel="shortcut icon" type="image/x-icon" />
-      <link rel="stylesheet" type="text/css" href="./paginaprincipal.css">
+      <link rel="stylesheet" type="text/css" href="./informacion.css">
+        <script language='javascript' type='text/javascript'>
+     var arriba;
+      function subir() {
+        if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+         window.scrollBy(0, -15);
+         arriba = setTimeout('subir()', 10);
+     }
+       else clearTimeout(arriba);
+   }
+      
+</script>
  </head> 
 
  <body> 
@@ -38,7 +49,7 @@
    <header class="head"> 
       <p class="sombra1">Direcci&#243;n</p> 
  </header>
-     <p>   <center> Fraccionamiento Villas Monterrey&#46; Calle San Nicolas de los Garzas &#35 2163 </center> </p>
+     <p>   <center> Fraccionamiento Villas Monterrey&#46; Calle San Nicolas de los Garzas &#35; 2163 </center> </p>
        <header class="head"> 
       <p class="sombra1">Correo</p> 
  </header>
@@ -57,6 +68,8 @@
         <li>     <a href="https://twitter.com/esmeHamed" target="_blank" >  <img src="./img/iconos/twitter.png">   </a> </li>
         <li>     <a         href="https://www.google.com.mx/maps/place/San+Nicol%C3%A1s+de+Los+Garza+2163,+Villas+Monterrey,+81270+Los+Mochis,+Sin./@25.7713518,-109.0089075,17z/data=!3m1!4b1!4m5!3m4!1s0x86ba258dcd4e2c95:0x76d24b2518aa9b73!8m2!3d25.771347!4d-109.0067188" target="_blank">  
         <img src="./img/iconos/ubiacion.png">  </a> </li> 
+        <li>  <a href='#' onclick='subir();return false' title='Ir Arriba'><img src="./img/iconos/flecha-ampliar.png"></a></li> 
+         
         
 </ul> 
      </footer>
@@ -65,3 +78,4 @@
   </body>
 
 </html> 
+
