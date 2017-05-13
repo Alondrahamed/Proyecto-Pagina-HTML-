@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <title>Test</title>
+      
+      <link rel=stylesheet type="text/css" href="./encuesta.css"/>
+  
+          <nav class="menu">   
+     <ul>  
+         
+        <li>     <a href="./pagina.html">   P&#225;gina Principal      </a> 
+        <li>     <a href="./infancia.html"> Mi Infancia     </a> </li>
+        <li>     <a href="./familia.html">     Familia        </a> </li>
+        <li>     <a href="./adolescencia.html"> Adolescencia </a> </li>
+        <li>     <a href="./estudios.html">   Estudios       </a> </li>
+        <li>     <a href="./amigos.html">    Amigos      </a> </li>
+        <li>     <a href="./experiencias.html">  Mis Experiencias  </a> </li>
+        <li>     <a href="./metas.html">     Metas           </a> </li>
+       <li>     <a href="./gustos.html">    Mis gustos            </a> </li>
+        <li>     <a href="./informacion.html">     Informaci&#243;n Personal       </a>  
+       </ul> 
+</nav>
+      
+      
+      
+    <script>
+        
+    var co;
+            function miFuncion(){
+       co=0;
+                
+            var p1=document.getElementById("o1").checked;
+            var p2=document.getElementById("o5").checked;
+            var p3=document.getElementById("o7").checked;
+            var p4=document.getElementById("o11").checked;
+            var p5=document.getElementById("o13").checked;
+            var p6=document.getElementById("o16").checked;
+            var p7=document.getElementById("o19").checked;
+            var p8=document.getElementById("o22").checked;
+            
+           
+                
+                   if(p1==true){
+            co=co+1;  
+          }
+                   if(p2==true){
+            co=co+1;  
+          }
+                   if(p3==true){
+            co=co+1;  
+          }
+                   if(p4==true){
+            co=co+1; 
+              
+          }
+                   if(p5==true){
+            co=co+1; 
+              
+          }
+                   if(p6==true){
+            co=co+1; 
+              
+          }
+                   if(p7==true){
+            co=co+1; 
+              
+          }
+                   if(p8==true){
+            co=co+1; 
+              
+          }
+       
+                 
+            }
+        
+        
+      function resultado(){
+
+         
+              alert("Tienes "+co+" aciertos.");
+          
+          
+      }
+     
+           
+    
+        
+    </script>
+    </head>
+    
+    
+    <body class="texturatest">
+   
+                
+<br>
+          <p class="titulostest">&#191;Qu&#233; tanto me conoces&#63;</p>
+        <br>
+        
+        
+            <div align=left class="bordertest margentest fondomargentest">
+                
+          
+ 
+
+
+
+               
+                <p class="textotest textoMargentest">1.-&#191;En qu&#xE9; estado del pa&#237;s de M&#xE9;xico nac&#237; &#63;</p>
+                <input class="radioMargentest"  type="radio" id="o1" name="p1" value="1" onclick="miFuncion();" checked>Sinaloa
+                <br> <input class=radioMargentest  type="radio" id="o2"  name="p1" value="0" onclick="miFuncion();">Baja California Sur
+                <br><input class=radioMargentest  type="radio" id="o3"  name="p1" value="0" onclick="miFuncion();">Baja California Norte
+                 <br>
+                    
+                <p class="textotest textoMargentest">2.-&#191;Cu&#225;l es mi fecha de nacimiento</p>
+                <input  class=radioMargentest type="radio" id="o4" name="p2" value="0" onclick="miFuncion();" checked>16 Julio 1994 
+                <br><input  class=radioMargentest type="radio" id="o5"  name="p2" value="1" onclick="miFuncion();">16 Junio 1994
+                <br><input  class=radioMargentest type="radio" id="o6"  name="p2" value="0" onclick="miFuncion();">06 Junio 1994
+                <br>
+                    
+                <p class="textotest textoMargentest">3.-&#191;Cu&#225;ntos hermanos tengo y cu&#225;les son sus nombres&#63;</p>
+                <input  class=radioMargentest type="radio" id="o7" name="p3" value="0" onclick="miFuncion();" checked> 2:Susana y Leonardo.
+                <br><input  class=radioMargentest type="radio" id="o8"  name="p3" value="0" onclick="miFuncion();"> 4: Susana,Cesar,Jose y Leonardo.
+                <br><input  class=radioMargentest type="radio" id="o9"  name="p3" value="1" onclick="miFuncion();"> 3: Jorge Susana y Leonardo.
+                <br>
+                
+                <p class="textotest textoMargentest">4.-&#191;Cu&#225;ntas mascotas tengo y como se llama&#63;</p>
+                <input  class=radioMargentest type="radio" id="o10" name="p4" value="0" onclick="miFuncion();" checked> 2: ELvis y toby.
+                <br><input  class=radioMargentest type="radio" id="o11"  name="p4" value="0" onclick="miFuncion();"> 1: Elvis.
+                <br><input  class=radioMargentest type="radio" id="o12"  name="p4" value="1" onclick="miFuncion();"> #: Toby, Aime, Bambi.
+                <br>
+                    
+                <p class="textotest textoMargentest">5.- &iquest;Cu&#xE1;l es el nombre de mis padres&#63;</p>
+                <input  class=radioMargentest type="radio" id="o13" name="p5" value="0" onclick="miFuncion();" checked> Rosaura y Jorge
+                <br><input  class=radioMargentest type="radio" id="o14"  name="p5" value="1" onclick="miFuncion();">Rosaura y Cesar.
+                <br><input  class=radioMargentest type="radio" id="o15"  name="p5" value="0" onclick="miFuncion();">Rosaura y Luis.
+                <br>
+                
+                <p class="textotest textoMargentest">6.- &#xBF;En qu&#xE9; Escuela Secundaria estudi&#xF3;&#63; </p>
+                <input  class=radioMargentest type="radio" id="o16" name="p6" value="1" onclick="miFuncion();" checked> Esc. Sec. Jose Maria Martinez Rodriguez
+                <br><input  class=radioMargentest type="radio" id="o17"  name="p6" value="0" onclick="miFuncion();">Esc.Sec. #4
+                <br><input  class=radioMargentest type="radio" id="o18"  name="p6" value="0" onclick="miFuncion();">Esc.Sec.Tec. No 3
+                <br>
+                    
+                <p class="textotest textoMargentest">7.-&#191;Cu&#225;l es una de las experiencias que mencione anteriormente en el sitio</p>          
+                <input  class=radioMargentest type="radio" id="o19" name="p7" value="0" onclick="miFuncion();" checked>Viaje a Guadalajara y Cuernavaca.
+                <br><input  class=radioMargentest type="radio" id="o20" name="p7" value="1" onclick="miFuncion();">Viaje a Estados Unidos.
+                <br><input  class=radioMargentest type="radio" id="o21" name="p7" value="0" onclick="miFuncion();"> Trabajar en Cystel Computacion.
+                <br>
+                    
+                <p class="textotest textoMargentest">8.- &#191; Sigo Estudiando la universidad &#63; </p>
+                <input  class=radioMargentest type="radio" id="o22" name="p8" value="0" onclick="miFuncion();" checked>Si
+                <br><input  class=radioMargentest type="radio" id="o23" name="p8" value="1" onclick="miFuncion();">No
+                <br>
+                    
+                
+              
+                    
+               <center>  <input align=center type="button" id="botonCalcular" value="Finalizar" name="finalizar" onclick="resultado();" /></center>
+         
+               
+       </div>  
+           
+             
+                
+        <br>
+        <br>
+        <div class="pietest">HAMED SOTO ALONDRA ESMERALDA</div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+         <footer style="position:fixed;bottom:0;width:100%">
+       <ul> 
+          
+        <li>     <a href="https://www.facebook.com/AlondraHamed" target="_blank">  <img src="./img/iconos/facebook.png">   </a> </li>
+        <li>     <a href="https://www.instagram.com/alondra_hamed/" target="_blank" >  <img src="./img/iconos/instagram.png">   </a> </li>
+        <li>     <a href="https://twitter.com/esmeHamed" target="_blank" >  <img src="./img/iconos/twitter.png">   </a> </li>
+        <li>     <a         href="https://www.google.com.mx/maps/place/San+Nicol%C3%A1s+de+Los+Garza+2163,+Villas+Monterrey,+81270+Los+Mochis,+Sin./@25.7713518,-109.0089075,17z/data=!3m1!4b1!4m5!3m4!1s0x86ba258dcd4e2c95:0x76d24b2518aa9b73!8m2!3d25.771347!4d-109.0067188" target="_blank">  
+        <img src="./img/iconos/ubiacion.png">  </a> </li> 
+       </ul> 
+     </footer>
+       </body>
+</html>
