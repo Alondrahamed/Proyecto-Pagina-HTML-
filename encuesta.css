@@ -1,0 +1,207 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    
+    
+}
+body {
+ 
+    background-color: #F8EEE7;
+}
+
+
+.sombra1 {
+color: #49274A ;   
+text-shadow: 0px 0px 10px #C0C0C0;
+font-size: 300%;
+font-family: 'Orbitron', serif;
+text-align: center;
+background-color:
+    
+}
+
+
+.bordertest{
+  border-style: inset;
+    border-width: 6px;
+    border-color:deeppink;
+    box-shadow: 5px 10px 10px #000;
+
+}
+.titulostest{
+ text-align: center;
+ font-family: "Arial";
+    font-size: 30px;
+    font-style: oblique;
+    color:white;
+    text-shadow: 5px 5px 5px #000000;
+    color: #49274A;
+  }
+
+.subtitulostest{
+ text-align: center;
+ font-family: "Arial";
+    font-size: 40px;
+    font-style: oblique;
+    color:brown;
+    
+    text-shadow: 2px 2px 2px #7E7E7E;
+    
+
+}
+
+.textotest{
+    text-align:justify;
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+   
+    
+    
+}
+
+.textocentertest{
+    text-align: center;
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+}
+
+.margentest{
+margin-bottom: auto;
+margin-top: auto;
+margin-left: 255px;
+    margin-right: 255px;
+}
+.textoMargentest{
+margin-bottom: 10px;
+margin-top: 20px;
+margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.radiomargentest{
+    text-align: center;
+}
+
+.fondomargentest{    /*fondo de los cuadros con contenido*/
+       
+        background-repeat: repeat;
+     background-color: white;
+   
+}
+
+
+.texturainstrucciones{
+    background-repeat:inherit;
+     width: 100%;
+  
+ background-color: #4582c3;
+    
+    
+}
+.texturatest{
+    background-repeat:inherit;
+     width: 100%;
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #49274A;
+      bottom: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 15px;
+}
+
+li a:hover {
+    background-color: #F4DECB;
+}
+
+.style { 
+  text-align: center;
+}
+
+
+footer {
+        position: fixed;
+        z-index: 50;
+    }
+footer > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #49274A;
+    
+    bottom: 0;
+   
+}
+footer> li {
+    
+    float: left;
+    }
+
+ a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 10px;
+}
+
+ a:hover:not(.active){
+    background-color: #F4DECB;
+}
+
+
+
+.style { 
+  text-align: center;
+}
+
+div.cae_texto img{
+    width:200px;
+    height:200px;
+    float:left;
+    margin: 10px 15px;
+    
+}
+
+
+.pietest{
+    
+    text-align: center;
+    color: #49274A ;   
+text-shadow: 0px 0px 10px #C0C0C0;
+
+font-family: 'Orbitron', serif;
+text-align: center;
+background-color:
+    
+}
+*{
+    margin: 0px;
+}
+
