@@ -1,8 +1,14 @@
+<%@ page language="java" contentType="text/html" %> 
+<%@page language="java" import="java.util.*" %> 
 <html>
   <head>
     <title>Test</title>
-      
-      <link rel=stylesheet type="text/css" href="./encuesta.css"/>
+      <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <link rel=stylesheet type="text/css" href="./encuesta.css"/>
+       
   
           <nav class="menu">   
      <ul>  
@@ -83,8 +89,33 @@
      
            
     
+    
+            function verificar(){
+                var form = document.getElementById("form");
+                var checkboxes = document.getElementsByName("opciones");
+                var verificadas = 0;
+                for(var i = 0; i < checkboxes.length; i++){
+                    if(checkboxes[i].checked == true){
+                        verificadas++;
+                    }
+                }
+                var button = document.getElementById("botonEnviar");
+                //alert("" + verificadas);
+                if(verificadas > 2){
+                    form.setAttribute("action", "resultadosdos.jsp");
+                    button.disabled = false;
+                }
+                if(verificadas > 0 && verificadas < 3){
+                    form.setAttribute("action", "resultados.jsp");
+                    button.disabled = false;
+                }
+                if(verificadas == 0){
+                    form.setAttribute("action", "");
+                    button.disabled = true;
+                }
+            } 
         
-    </script>
+        </script>
     </head>
     
     
@@ -154,9 +185,22 @@
                 
               
                     
-               <center>  <input align=center type="button" id="botonCalcular" value="Finalizar" name="finalizar" onclick="resultado();" /></center>
-         
-               
+               <center>  <input align=center type="button" id="botonCalcular" value="Finalizar" name="finalizar" onclick="resultado();" /></center>   
+               <br> 
+               <br>
+                 
+              <div> <h2> Cuàles serian tus recomendaciones para el sitio </h2> </div> 
+      
+              <form  name="resultados" action="resultados.jsp" id="form">    
+              <p> Seleccione alguna recomendaciòn</p> 
+              <div><input type="checkbox" name="opciones"  value="infor" onclick="verificar();"/> Agregar m&#225;s informaci&#243;n en las p&#225;ginas </div>
+              <br>
+              <div><input type="checkbox" name="opciones" value="diseño" onclick="verificar();"/> Mejorar el dise&#241;o con otros colores o agregarle mas efectos </div>
+              <br> 
+              <div><input type="checkbox" name="opciones" value="imagenes" onclick="verificar();"/> Agregar una galeria de imagenes </div>
+              <br> 
+             <center> <input type="submit" value="Enviar" name="botonEnviar" id="botonEnviar" disabled/></center> 
+            </form>
        </div>  
            
              
